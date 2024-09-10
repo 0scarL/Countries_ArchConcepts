@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/countryFlagImageView"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/countryNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/countryFlagImageView"
+            app:layout_constraintTop_toTopOf="@+id/countryFlagImageView"
+            tools:text="Country Name" />
+
+        <TextView
+            android:id="@+id/countryPopulationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/countryNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/countryNameTextView"
+            tools:text="Population: 123456789" />
+
+        <TextView
+            android:id="@+id/countryRegionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/countryPopulationTextView"
+            app:layout_constraintTop_toBottomOf="@+id/countryPopulationTextView"
+            tools:text="Region: Africa" />
+
+        <TextView
+            android:id="@+id/countryCapitalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/countryRegionTextView"
+            app:layout_constraintTop_toBottomOf="@+id/countryRegionTextView"
+            tools:text="Capital: [Capital]" />
+        <!-- Otros campos como languages, area, capital, borders -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
