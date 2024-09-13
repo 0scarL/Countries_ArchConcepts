@@ -1,0 +1,1 @@
+Este proyecto contiene el uso de diversos conceptos de una apk moderna, tales como mvvm, room, firebase, retrofit, uso de patrones de diseño como diffut util manejo de vistas con rec view en una arquitect clean que actualiza la capa de UI con live data y la de datos con Flow, se crean los clientes de origenes de datos con flow
